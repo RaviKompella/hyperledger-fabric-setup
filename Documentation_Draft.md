@@ -90,8 +90,8 @@ VirtualBox is a cross-platform virtualization application that supports all majo
 - Follow the instructions in the installation wizard. Accept the default settings unless you have specific requirements.
 - Once the installation is complete, you should see the VirtualBox Manager on your screen.
 
-    <!--img src="image.png" alt="Virtualbox Home Screen"-->
-    ![Virtualbox Home Screen](image.png)
+    <img src="Images/image.png" alt="Virtualbox Home Screen">
+
     
 
 ### 3.3 Importing the Fabric Image
@@ -101,8 +101,8 @@ VirtualBox is a cross-platform virtualization application that supports all majo
 - Click "Open", then "Next", and finally "Import" in the Appliance Settings screen.
 - Upon successful import, the fabricDev image should be visible in the VirtualBox Manager, as shown below.
 
-    <!--img src="image-1.png" alt="fabricDev image in VirtualBox"-->
-    ![fabricDev image in VirtualBox](image-1.png)
+    <img src="Images/image-1.png" alt="fabricDev image in VirtualBox">
+
 
 ### 3.4 Starting the Virtual Machine
 
@@ -131,8 +131,8 @@ After typing `sudo su`, you will be prompted to enter your password. This comman
 
 Once you have successfully switched to the root user, type `ls` and press Enter. You should see the contents of the `fabric-samples` directory as shown in the image below.
 
-  <!--img src="image-2.png" alt="Test Network Directory"-->
-  ![Test Network Directory](image-2.png)
+  <img src="Images/image-2.png" alt="Test Network Directory">
+
 
 
 ### 4.2 Setting Environment Variables
@@ -170,8 +170,8 @@ The ./network.sh script is a utility that automates several network operations s
 
 For more information on the network.sh script, you can refer to the [Hyperledger Fabric Samples GitHub page](https://github.com/hyperledger/fabric-samples/blob/main/test-network/network.sh#L279).
 
+<img src="Images/Picture1.png" alt="Succesfully executed the ./network.sh up command" width="70%">
 
-![Succesfully executed the ./network.sh up command](Picture1.png)
 
 
 ### 5.2 Deploying the Chaincode
@@ -189,8 +189,9 @@ The ./network.sh deployCC command deploys the specified chaincode on the network
 
 For more information on the network.sh script, you can refer to the [Hyperledger Fabric Samples GitHub page](https://github.com/hyperledger/fabric-samples/blob/main/test-network/network.sh#L337)
 
-<!--img src="CC_Deploy.png" alt="Succesfully deployed the ./network.sh deployCC command" width="70%"-->
-![Succesfully deployed the ./network.sh deployCC command](CC_Deploy.png)
+<img src="Images/CC_Deploy.png" alt="Succesfully deployed the ./network.sh deployCC command" width="70%">
+
+
 
 ## 6. Chaincode Operations
 
@@ -209,8 +210,7 @@ Please replace the channel name, chaincode name, function, and arguments accordi
 
 For more information on invoking chaincode, you can refer to the [Hyperledger Fabric Documentation](https://hyperledger-fabric.readthedocs.io/en/latest/commands/peerchaincode.html?highlight=invoke#peer-chaincode-invoke-example).
 
-<!--img src="CC_Invoke.png" alt="Succesfully invoked the Chaincode command" width="70%"-->
-![Succesfully invoked the Chaincode command](CC_Invoke.png)
+<img src="Images/CC_Invoke.png" alt="Succesfully invoked the Chaincode command" width="70%">
 
 ### 6.2 Querying Chaincode
 
@@ -227,9 +227,9 @@ Please replace the channel name, chaincode name, and function according to your 
 
 For more information on querying chaincode, you can refer to the [Hyperledger Fabric Documentation](https://hyperledger-fabric.readthedocs.io/en/latest/commands/peerchaincode.html?highlight=query#peer-chaincode-query-example).
 
-<!--img src="CC_Query.png" alt="Succesfully deployed the ./network.sh deployCC command" width="70%"-->
+<img src="Images/CC_Query.png" alt="Succesfully deployed the ./network.sh deployCC command" width="70%">
 
-![Succesfully deployed the ./network.sh deployCC command](CC_Query.png)
+
 
 ### 6.3 Setting Environment Variables for Org2
 
@@ -257,8 +257,8 @@ This command invokes the `TransferAsset` function of the chaincode named `basic`
 
 Please replace the channel name, chaincode name, function, and arguments according to your specific use case.
 
-<!--img src="CC_InvokeO2.png" alt="Succesfully invoked the chaincode from Org2" width="70%"-->
-![Succesfully invoked the chaincode from Org2](CC_InvokeO2.png)
+<img src="Images/CC_InvokeO2.png" alt="Succesfully invoked the chaincode from Org2" width="70%">
+
 
 ### 6.5 Chaincode Query for Org2
 
@@ -273,8 +273,8 @@ This command queries the `ReadAsset` function of the chaincode named `basic` on 
 
 Please replace the channel name, chaincode name, and function according to your specific use case.
 
-<!--img src="CC_QueryO2.png" alt="Succesfully queried the chaincode from Org2" width="70%"-->
-![Succesfully queried the chaincode from Org2](CC_QueryO2.png)
+<img src="Images/CC_QueryO2.png" alt="Succesfully queried the chaincode from Org2" width="70%">
+
 
 
 ## 7. Blockchain Explorer Setup
@@ -291,8 +291,8 @@ Navigate to the explorer folder by running the following commands:
 cd $HOME
 cd explorer
 ```
-<!--img src="Explorer.png" alt="Explorer Directory in CLI " width="70%"-->
-![Explorer Directory in CLI](Explorer.png)
+<img src="Images/Explorer.png" alt="Explorer Directory in CLI " width="70%">
+
 
 ### 7.2 Entering Administrator Mode and Starting the Server
 
@@ -312,8 +312,8 @@ docker-compose up -d
 
 This will start the server in detached mode. Now, the Blockchain Explorer should be up and running.
 
-<!--img src="Explorer_Up.png" alt="Bringing Explorer Directory Up and Running " width="70%"-->
-![Bringing Explorer Directory Up and Running](Explorer_Up.png)
+<img src="Images/Explorer_Up.png" alt="Bringing Explorer Directory Up and Running " width="70%">
+
 
 ### 7.3 Accessing the Blockchain Explorer
 
@@ -326,13 +326,13 @@ To log in, use the following credentials:
 
 After logging in, you should be able to view and interact with the blockchain network graphically.
 
-<!--img src="Explorer_GUI.png" alt="Blockchain Explorer Home Screen" width="70%"-->
-![Blockchain Explorer Home Screen](Explorer_GUI.png)
+<img src="Images/Explorer_GUI.png" alt="Blockchain Explorer Home Screen" width="70%">
+
 
 After logging in, if you see the main dashboard of the Blockchain Explorer, it means that the installation setup is complete. You can now interact with the blockchain network graphically and view transactions, blocks, and other relevant information.
 
-<!--img src="Explorer_Dashboard.png" alt="Blockchain Explorer Dasboard" width="70%"-->
-![Blockchain Explorer Dasboard](Explorer_Dashboard.png)
+<img src="Images/Explorer_Dashboard.png" alt="Blockchain Explorer Dasboard" width="70%">
+
 
 ## 8. Network and Troubleshooting
 
@@ -348,8 +348,8 @@ cd fabric-samples/test-network
 ```
 This will stop all the network components.
 
-<!--img src="NetworkDown.png" alt="Stopping the Fabric Network" width="70%"-->
-![Stopping the Fabric Network](NetworkDown.png)
+<img src="Images/NetworkDown.png" alt="Stopping the Fabric Network" width="70%">
+
 
 ### 8.2 Stopping the Explorer Server
 
@@ -359,8 +359,8 @@ If you encounter any issues with the Blockchain Explorer, you can bring it down 
 cd $HOME/explorer
 docker-compose down -v
 ```
-<!--img src="ExplorerDown.png" alt="Stopping the Explorer Server" width="70%"-->
-![Stopping the Explorer Server](ExplorerDown.png)
+<img src="Images/ExplorerDown.png" alt="Stopping the Explorer Server" width="70%">
+
 
 ### 8.3 Troubleshooting Tips
 If any of the components are not working as expected, try the following:
