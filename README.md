@@ -181,7 +181,7 @@ After bringing up the network and creating a channel, the next step is to deploy
 To deploy the chaincode, run the following command from the `fabric-samples/test-network` directory:
 
 ```bash
-./network.sh deployCC -ccn ChaincodeName -ccp ChaincodePath -ccl ChaincodeLanguage
+./network.sh deployCC -ccn *ChaincodeName* -ccp *ChaincodePath* -ccl *ChaincodeLanguage*
 ```
 ```bash
 ./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go/ -ccl go
