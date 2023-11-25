@@ -183,6 +183,9 @@ To deploy the chaincode, run the following command from the `fabric-samples/test
 ```bash
 ./network.sh deployCC -ccn ChaincodeName -ccp ChaincodePath -ccl ChaincodeLanguage
 ```
+```bash
+./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go/ -ccl go
+```
 Replace `ChaincodeName` with the name of your chaincode, `ChaincodePath` with the path to your chaincode, and `ChaincodeLanguage` with the language of your chaincode (either go, javascript, or java).
 
 The ./network.sh deployCC command deploys the specified chaincode on the network.
