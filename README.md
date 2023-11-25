@@ -176,13 +176,13 @@ For more information on the network.sh script, you can refer to the [Hyperledger
 
 ### 5.2 Deploying the Chaincode
 
-After bringing up the network and creating a channel, the next step is to deploy the chaincode. Chaincode is a piece of code that is written in one of the supported languages such as Go, Node.js, or Java. It is installed on the peers and defines the business logic of your blockchain network.
-
-To deploy the chaincode, run the following command from the `fabric-samples/test-network` directory:
+After bringing up the network and creating a channel, the next step is to deploy the chaincode. Chaincode is a piece of code that is written in one of the supported languages such as Go, Node.js, or Java. It is installed on the peers and defines the business logic of your blockchain network. The chaincode deploy command is as follows
 
 ```bash
 ./network.sh deployCC -ccn *ChaincodeName* -ccp *ChaincodePath* -ccl *ChaincodeLanguage*
 ```
+To deploy the [asset-transfer-basic-chaincode](https://github.com/hyperledger/fabric-samples/blob/main/asset-transfer-basic/chaincode-go/chaincode/smartcontract.go), run the following command from the `fabric-samples/test-network` directory:
+
 ```bash
 ./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go/ -ccl go
 ```
