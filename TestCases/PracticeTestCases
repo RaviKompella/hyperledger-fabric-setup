@@ -1,0 +1,68 @@
+# Digital Art Marketplace Test Cases
+
+## Test Case 1: Mint New Art Piece
+
+**Description**: This test case verifies that an artist can successfully create a new digital art piece in the marketplace.
+
+**Steps**:
+
+1. Artist Bob initiates a transaction to mint a new digital art piece, providing specific attributes such as title, description, etc.
+2. Check that the transaction is processed without errors.
+3. Confirm that the new art piece is now recorded in the ledger with the correct attributes.
+
+## Test Case 2: List Art Piece for Sale
+
+**Description**: This test case checks that an artist can list an art piece for sale at a specific price.
+
+**Steps**:
+
+1. Artist Bob initiates a transaction to list Art Piece X for sale, setting a specific price.
+2. Check that the transaction is processed without errors.
+3. Confirm that Art Piece X is now listed for sale in the marketplace at the correct price.
+
+## Test Case 3: Buy Art Piece
+
+**Description**: This test case verifies that a user can purchase an art piece listed for sale.
+
+**Steps**:
+
+1. User Alice initiates a transaction to buy Art Piece X, which is listed for sale by Bob.
+2. Check that the transaction is processed without errors.
+3. Confirm that Alice is now recorded as the owner of Art Piece X in the ledger.
+4. Confirm that Bob's balance has increased by the sale price of Art Piece X.
+
+## Test Case 4: Verify Art Piece Listing in Blockchain Explorer
+
+**Description**: This test case verifies that a newly listed art piece for sale is correctly reflected in the blockchain explorer.
+
+**Steps**:
+
+1. Artist Bob lists Art Piece X for sale at a specific price.
+2. Verify that the transaction is successful.
+3. Open the local blockchain explorer.
+4. Locate the completed transaction in the blockchain explorer.
+5. Verify that the transaction details are correct (e.g., artist is Bob, art piece is Art Piece X, listing price matches the specified price).
+
+## Test Case 5: Verify Art Piece Purchase in Blockchain Explorer
+
+**Description**: This test case checks that a successful purchase of an art piece is correctly reflected in the blockchain explorer.
+
+**Steps**:
+
+1. User Alice buys Art Piece X listed for sale by Bob.
+2. Verify that the transaction is successful.
+3. Open the local blockchain explorer.
+4. Locate the completed transaction in the blockchain explorer.
+5. Verify that the transaction details are correct (e.g., buyer is Alice, seller is Bob, purchased item is Art Piece X).
+
+## Test Case 6: Verify Failed Art Piece Purchase in Blockchain Explorer
+
+**Description**: This test case verifies that a failed art piece purchase (e.g., due to insufficient balance) is correctly reflected in the blockchain explorer.
+
+**Steps**:
+
+1. User Alice, with insufficient balance, attempts to buy Art Piece X from Bob.
+2. Verify that the transaction fails.
+3. Open the local blockchain explorer.
+4. Locate the failed transaction in the blockchain explorer.
+5. Verify that the transaction details are correct and reflect the failure (e.g., intended buyer is Alice, seller is Bob, intended purchase item is Art Piece X, status is "failed").
